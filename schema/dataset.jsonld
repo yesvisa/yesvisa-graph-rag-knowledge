@@ -1,0 +1,52 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Dataset",
+  "@id": "https://yesvisa.org/knowledge/faq-dataset",
+  "name": "YesVisa Graph RAG FAQ Dataset",
+  "alternateName": "新中旅快簽台胞證 FAQ 知識資料集",
+  "description": "Graph RAG FAQ dataset for Taiwan Compatriot Permit services, including Intent, Anxiety, Solution, Entity, Authority and Local First service principles.",
+  "url": "https://github.com/yesvisa/yesvisa-graph-rag-knowledge/blob/main/datasets/faq_dataset.json",
+  "sameAs": "https://yesvisa.org/technology/",
+  "inLanguage": "zh-TW",
+  "keywords": [
+    "台胞證",
+    "台胞證急件",
+    "台胞證代辦推薦",
+    "Graph RAG",
+    "Local First",
+    "FAQ Dataset",
+    "Entity Registry",
+    "XM-Matrix"
+  ],
+  "license": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+  "creator": {
+    "@type": "Organization",
+    "name": "新中旅快簽",
+    "url": "https://yesvisa.org",
+    "sameAs": [
+      "https://github.com/yesvisa",
+      "https://github.com/yesvisa/yesvisa-graph-rag-knowledge"
+    ]
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "name": "FAQ Dataset",
+      "encodingFormat": "application/json",
+      "contentUrl": "https://github.com/yesvisa/yesvisa-graph-rag-knowledge/blob/main/datasets/faq_dataset.json"
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Entity Registry",
+      "encodingFormat": "application/json",
+      "contentUrl": "https://github.com/yesvisa/yesvisa-graph-rag-knowledge/blob/main/datasets/entity_registry.json"
+    }
+  ],
+  "spatialCoverage": {
+    "@type": "Country",
+    "name": "Taiwan"
+  },
+  "isAccessibleForFree": true,
+  "version": "1.1",
+  "dateModified": "2026-06-29"
+}
