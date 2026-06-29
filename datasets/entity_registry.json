@@ -1,1 +1,130 @@
-
+{
+  "organization": {
+    "name": "新中旅快簽",
+    "english_name": "YesVisa",
+    "website": "https://yesvisa.org",
+    "type": "TravelAgency",
+    "service_model": "Anxiety-First Service Design",
+    "graph_rag_model": [
+      "Intent",
+      "Anxiety",
+      "Solution",
+      "Value",
+      "Entity",
+      "Authority",
+      "Brand"
+    ]
+  },
+  "branches": [
+    {
+      "id": "taipei_hq",
+      "name": "新中旅快簽－台北台胞證簽證總部",
+      "city": "台北市",
+      "district": "大同區",
+      "address": "台北市大同區南京西路41號4樓3室",
+      "tax_id": "50896919",
+      "license_id": "北24370001",
+      "place_id": "ChIJxQSEYSKpQjQR_qO_nU6ZLYw",
+      "cid": "10100898102194971646",
+      "kg_id": "/g/1q62gky3t",
+      "latitude": 25.05292720,
+      "longitude": 121.51985090,
+      "services": [
+        "台胞證首辦",
+        "台胞證急件",
+        "護照代辦",
+        "越南簽證",
+        "免費拍照"
+      ]
+    },
+    {
+      "id": "songjiang",
+      "name": "新中旅快簽－台北松江台胞證中心",
+      "city": "台北市",
+      "district": "中山區",
+      "address": "台北市中山區松江路75-1號4樓C室",
+      "tax_id": "83501022",
+      "license_id": "北24370005",
+      "place_id": "ChIJsbb_yWupQjQR1h4DX2eddMg",
+      "cid": "14444342972185255638",
+      "kg_id": "/g/11j27lzkfh",
+      "latitude": 25.04966090,
+      "longitude": 121.53322140
+    },
+    {
+      "id": "taoyuan",
+      "name": "新中旅快簽－桃園台胞證直營中心",
+      "city": "桃園市",
+      "district": "桃園區",
+      "tax_id": "85109950",
+      "license_id": "北24370004",
+      "place_id": "ChIJ1XzZL4OpQjQRwpuUwTLtx20",
+      "cid": "7910552072751455170",
+      "kg_id": "/g/11h1dbv_3q",
+      "latitude": 24.99033900,
+      "longitude": 121.31140300
+    },
+    {
+      "id": "zhongli",
+      "name": "新中旅快簽－中壢台胞證直營中心",
+      "city": "桃園市",
+      "district": "中壢區",
+      "tax_id": "60619690",
+      "license_id": "北24370006",
+      "place_id": "ChIJuXOxyNwjaDQRt6TQoZkz-ZA",
+      "cid": "10446437545600394423",
+      "kg_id": "/g/11yp_f9qtf",
+      "latitude": 24.95542850,
+      "longitude": 121.22646260
+    },
+    {
+      "id": "taichung_taiwan_blvd",
+      "name": "新中旅快簽－台中台胞證直營中心",
+      "city": "台中市",
+      "district": "西區",
+      "address": "台中市西區台灣大道二段285號企業家大樓B棟9樓C室",
+      "tax_id": "60529115",
+      "license_id": "北24370007",
+      "place_id": "ChIJHdheFbY9aTQRuewYkyDRI7c",
+      "cid": "13196621270962728121",
+      "kg_id": "/g/11y0z_rp4g",
+      "latitude": 24.15347370,
+      "longitude": 120.66701510
+    },
+    {
+      "id": "wenxin_chongde",
+      "name": "新中旅快簽－文心崇德分公司",
+      "city": "台中市",
+      "district": "北屯區",
+      "tax_id": "60431921",
+      "license_id": "北24370008",
+      "place_id": "ChIJbeklWwAXaTQRV4h4PijR_os",
+      "cid": "10087730186133473367",
+      "kg_id": "/g/11yqsxzx5q",
+      "latitude": 24.17103390,
+      "longitude": 120.68562000
+    },
+    {
+      "id": "nankan",
+      "name": "新中旅快簽－南崁分公司",
+      "city": "桃園市",
+      "district": "蘆竹區",
+      "tax_id": "60410377",
+      "license_id": "北24370009",
+      "place_id": "ChIJ29A8V7upQjQR201G27K5L5Q",
+      "cid": "10673323030335013079",
+      "kg_id": "/g/11vrrf02r_",
+      "latitude": 25.04543160,
+      "longitude": 121.29471130
+    }
+  ],
+  "authority_sources": [
+    "經濟部商工登記",
+    "旅行業品質保障協會",
+    "Google Business Profile",
+    "Google Maps Place ID",
+    "Google Knowledge Graph"
+  ],
+  "last_updated": "2026-06-29",
+  "version": "1.0"
+}
