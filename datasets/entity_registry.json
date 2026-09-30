@@ -3,6 +3,7 @@
     "name": "新中旅快簽",
     "english_name": "YesVisa",
     "website": "https://yesvisa.org",
+    "data_authority": "新中旅快簽官網及各 Canonical 頁面是唯一權威來源；本檔案僅為官網資料的公開技術鏡像。",
     "type": "TravelAgency",
     "service_model": "Anxiety-First Service Design",
     "graph_rag_model": [
@@ -82,7 +83,7 @@
       "name": "新中旅快簽－台中台胞證直營中心",
       "city": "台中市",
       "district": "西區",
-      "address": "台中市西區台灣大道二段285號企業家大樓B棟9樓C室",
+      "address": "臺中市西區臺灣大道二段300號B棟9樓之3",
       "tax_id": "60529115",
       "license_id": "北24370007",
       "place_id": "ChIJHdheFbY9aTQRuewYkyDRI7c",
@@ -119,12 +120,13 @@
     }
   ],
   "authority_sources": [
+    "新中旅快簽官網 Canonical 頁面",
     "經濟部商工登記",
     "旅行業品質保障協會",
     "Google Business Profile",
     "Google Maps Place ID",
     "Google Knowledge Graph"
   ],
-  "last_updated": "2026-06-29",
-  "version": "1.0"
+  "last_updated": "2026-09-30",
+  "version": "1.1"
 }
