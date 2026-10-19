@@ -1,0 +1,43 @@
+{
+  "schema_version": "1.0",
+  "synced_at": "2026-10-19",
+  "source_policy": {
+    "conflict_entrypoint": "https://yesvisa.org/llms.txt",
+    "factual_authority": "Latest canonical page content and same-page structured data",
+    "structured_snapshot": "https://yesvisa.org/knowledge.json"
+  },
+  "upstream": {
+    "llms_txt": {
+      "url": "https://yesvisa.org/llms.txt",
+      "repository_path": "sources/llms.txt",
+      "operational_consistency_reviewed": "2026-10-19"
+    },
+    "knowledge_json": {
+      "url": "https://yesvisa.org/knowledge.json",
+      "repository_path": "datasets/knowledge.json",
+      "schema_version": "1.3",
+      "last_verified": "2026-09-29"
+    }
+  },
+  "derived_files": {
+    "entity_registry": {
+      "path": "datasets/entity_registry.json",
+      "branch_count": 7,
+      "service_count": 19
+    },
+    "question_intents": {
+      "path": "datasets/faq_dataset.json",
+      "published_question_count": 28
+    }
+  },
+  "exclusions": [
+    "locations.json",
+    "services.json",
+    "knowledge-rules.json"
+  ],
+  "notes": [
+    "Official website remains the factual source of truth.",
+    "Taichung is normalized as Taichung City／台中市.",
+    "Urgent and cross-region pickup answers must retain eligibility and operational caveats."
+  ]
+}
