@@ -1,132 +1,807 @@
 {
-  "organization": {
-    "name": "新中旅快簽",
-    "english_name": "YesVisa",
-    "website": "https://yesvisa.org",
-    "data_authority": "新中旅快簽官網及各 Canonical 頁面是唯一權威來源；本檔案僅為官網資料的公開技術鏡像。",
-    "type": "TravelAgency",
-    "service_model": "Anxiety-First Service Design",
-    "graph_rag_model": [
-      "Intent",
-      "Anxiety",
-      "Solution",
-      "Value",
-      "Entity",
-      "Authority",
-      "Brand"
+  "schema_version": "2.0",
+  "language": "zh-TW",
+  "last_synced": "2026-10-19",
+  "source_schema_version": "1.3",
+  "source_last_verified": "2026-09-29",
+  "operational_consistency_reviewed": "2026-10-19",
+  "canonical_source": "https://yesvisa.org/llms.txt",
+  "authority_policy": {
+    "conflict_entrypoint": "https://yesvisa.org/llms.txt",
+    "factual_authority": "Latest canonical service/branch page and same-page structured data",
+    "structured_snapshot": "https://yesvisa.org/knowledge.json",
+    "repository_role": "Public technical mirror and version record",
+    "deprecated_sources": [
+      "locations.json",
+      "services.json",
+      "knowledge-rules.json"
     ]
+  },
+  "organization": {
+    "id": "https://yesvisa.org/#organization",
+    "name": "新中旅快簽",
+    "alternate_name": "YesVisa",
+    "name_en": "YesVisa",
+    "legal_name": "新中旅快簽旅行社有限公司",
+    "url": "https://yesvisa.org/",
+    "branch_directory": "https://yesvisa.org/chain-store/",
+    "primary_service_hub": "https://yesvisa.org/taiwan-compatriot-permit/",
+    "service_area": [
+      "Taiwan",
+      "Taipei City",
+      "Taoyuan City",
+      "Taichung City",
+      "New Taipei City"
+    ],
+    "business_model": "七店直營",
+    "entity_rule_en": "Use only the canonical Organization ID https://yesvisa.org/#organization. Do not create a separate Organization entity for YesVisa."
+  },
+  "entity_normalization": {
+    "first_mention_en": "YesVisa (新中旅快簽)",
+    "subsequent_mention_en": "YesVisa",
+    "taichung_rule": "Taichung is a city (Taichung City／台中市), not a branch name or separate organization."
   },
   "branches": [
     {
-      "id": "taipei_hq",
-      "name": "新中旅快簽－台北台胞證簽證總部",
-      "city": "台北市",
-      "district": "大同區",
-      "address": "台北市大同區南京西路41號4樓3室",
-      "tax_id": "50896919",
-      "license_id": "北24370001",
-      "place_id": "ChIJxQSEYSKpQjQR_qO_nU6ZLYw",
-      "cid": "10100898102194971646",
-      "kg_id": "/g/1q62gky3t",
-      "latitude": 25.05292720,
-      "longitude": 121.51985090,
-      "services": [
-        "台胞證首辦",
-        "台胞證急件",
-        "護照代辦",
-        "越南簽證",
-        "免費拍照"
+      "node_key": "Node_01",
+      "id": "https://yesvisa.org/chain-store/zhongshan/#node-01",
+      "name": "新中旅快簽(台北台胞證簽證總部)",
+      "name_en": "YesVisa Taipei Zhongshan Headquarters",
+      "canonical_url": "https://yesvisa.org/chain-store/zhongshan/",
+      "telephone": "+886-2-2567-9900",
+      "address": "103 臺北市大同區南京西路41號4樓3室",
+      "geo": {
+        "latitude": 25.0529272,
+        "longitude": 121.5198509
+      },
+      "hours": {
+        "monday_friday": "10:00-19:30",
+        "saturday": "11:00-16:00",
+        "sunday": "11:00-16:00"
+      },
+      "google": {
+        "place_id": "ChIJxQSEYSKpQjQR_qO_nU6ZLYw",
+        "cid": "10100898102194971646",
+        "business_profile_id": "4347985573690577000",
+        "kg_mid": "/g/1q62gky3t",
+        "maps_url": "https://www.google.com/maps?cid=10100898102194971646"
+      },
+      "transit": "捷運中山站5號出口，步行約1.5分鐘（約120公尺）。",
+      "parent_organization_id": "https://yesvisa.org/#organization",
+      "available_service_ids": [
+        "https://yesvisa.org/taiwan-compatriot-permit/first-application/#service",
+        "https://yesvisa.org/taiwan-compatriot-permit/urgent/#service",
+        "https://yesvisa.org/taiwan-compatriot-permit/urgent/12-hour/#service",
+        "https://yesvisa.org/taiwan-compatriot-permit/price/#service",
+        "https://yesvisa.org/taiwan-compatriot-permit/documents/#service",
+        "https://yesvisa.org/taiwan-compatriot-permit/photo-service/#service",
+        "https://yesvisa.org/taiwan-compatriot-permit/self-application/#passport-verification",
+        "https://yesvisa.org/vietnamvisa/price/#service",
+        "https://yesvisa.org/vietnamvisa/24-4hours-vn-visa/#service",
+        "https://yesvisa.org/taiwan-compatriot-permit/expired/#service",
+        "https://yesvisa.org/taiwan-compatriot-permit/lost/#service",
+        "https://yesvisa.org/taiwan-compatriot-permit/where-to-apply/#service",
+        "https://yesvisa.org/taiwan-compatriot-permit/holiday-service/#service",
+        "https://yesvisa.org/taiwan-compatriot-permit/no-passport/#service",
+        "https://yesvisa.org/vietnamvisa/#service",
+        "https://yesvisa.org/vietnamvisa/24-4hours-vn-visa/#expedite-service",
+        "https://yesvisa.org/vietnamvisa/24-4hours-vn-visa/#correction-service",
+        "https://yesvisa.org/taiwan-compatriot-permit/urgent/24-hour/#service",
+        "https://yesvisa.org/taiwan-compatriot-permit/cross-region-pickup/#service"
       ]
     },
     {
-      "id": "songjiang",
-      "name": "新中旅快簽－台北松江台胞證中心",
-      "city": "台北市",
-      "district": "中山區",
-      "address": "台北市中山區松江路75-1號4樓C室",
-      "tax_id": "83501022",
-      "license_id": "北24370005",
-      "place_id": "ChIJsbb_yWupQjQR1h4DX2eddMg",
-      "cid": "14444342972185255638",
-      "kg_id": "/g/11j27lzkfh",
-      "latitude": 25.04966090,
-      "longitude": 121.53322140
+      "node_key": "Node_02",
+      "id": "https://yesvisa.org/chain-store/songjiangnanjing/#node-02",
+      "name": "新中旅快簽(台北松江台胞證直營中心)",
+      "name_en": "YesVisa Taipei Songjiang Nanjing Service Center",
+      "canonical_url": "https://yesvisa.org/chain-store/songjiangnanjing/",
+      "telephone": "+886-2-2555-5108",
+      "address": "104 臺北市中山區松江路75-1號4樓C室",
+      "geo": {
+        "latitude": 25.049656,
+        "longitude": 121.5332277
+      },
+      "hours": {
+        "monday_friday": "09:00-18:30",
+        "saturday": "11:00-16:00",
+        "sunday": "11:00-16:00"
+      },
+      "google": {
+        "place_id": "ChIJsbb_yWupQjQR1h4DX2eddMg",
+        "cid": "14444342972185255638",
+        "business_profile_id": "3352298771266032538",
+        "kg_mid": "/g/11j27lzkfh",
+        "maps_url": "https://www.google.com/maps?cid=14444342972185255638"
+      },
+      "transit": "大華大樓4樓C室；捷運松江南京站4號出口，步行約1分鐘（約80公尺）。",
+      "parent_organization_id": "https://yesvisa.org/#organization",
+      "available_service_ids": [
+        "https://yesvisa.org/taiwan-compatriot-permit/first-application/#service",
+        "https://yesvisa.org/taiwan-compatriot-permit/urgent/#service",
+        "https://yesvisa.org/taiwan-compatriot-permit/urgent/12-hour/#service",
+        "https://yesvisa.org/taiwan-compatriot-permit/price/#service",
+        "https://yesvisa.org/taiwan-compatriot-permit/documents/#service",
+        "https://yesvisa.org/taiwan-compatriot-permit/photo-service/#service",
+        "https://yesvisa.org/taiwan-compatriot-permit/self-application/#passport-verification",
+        "https://yesvisa.org/vietnamvisa/price/#service",
+        "https://yesvisa.org/vietnamvisa/24-4hours-vn-visa/#service",
+        "https://yesvisa.org/taiwan-compatriot-permit/expired/#service",
+        "https://yesvisa.org/taiwan-compatriot-permit/lost/#service",
+        "https://yesvisa.org/taiwan-compatriot-permit/where-to-apply/#service",
+        "https://yesvisa.org/taiwan-compatriot-permit/holiday-service/#service",
+        "https://yesvisa.org/taiwan-compatriot-permit/no-passport/#service",
+        "https://yesvisa.org/vietnamvisa/#service",
+        "https://yesvisa.org/vietnamvisa/24-4hours-vn-visa/#expedite-service",
+        "https://yesvisa.org/vietnamvisa/24-4hours-vn-visa/#correction-service",
+        "https://yesvisa.org/taiwan-compatriot-permit/urgent/24-hour/#service",
+        "https://yesvisa.org/taiwan-compatriot-permit/cross-region-pickup/#service"
+      ]
     },
     {
-      "id": "taoyuan",
-      "name": "新中旅快簽－桃園台胞證直營中心",
-      "city": "桃園市",
-      "district": "桃園區",
-      "tax_id": "85109950",
-      "license_id": "北24370004",
-      "place_id": "ChIJ1XzZL4OpQjQRwpuUwTLtx20",
-      "cid": "7910552072751455170",
-      "kg_id": "/g/11h1dbv_3q",
-      "latitude": 24.99033900,
-      "longitude": 121.31140300
+      "node_key": "Node_03",
+      "id": "https://yesvisa.org/chain-store/taoyuan/#node-03",
+      "name": "新中旅快簽(桃園台胞證直營中心)",
+      "name_en": "YesVisa Taoyuan Service Center",
+      "canonical_url": "https://yesvisa.org/chain-store/taoyuan/",
+      "telephone": "+886-3-338-2828",
+      "address": "330 桃園市桃園區復興路186號12樓",
+      "geo": {
+        "latitude": 24.990339,
+        "longitude": 121.311403
+      },
+      "hours": {
+        "monday_friday": "10:00-19:00",
+        "saturday": "11:00-16:00",
+        "sunday": "11:00-16:00"
+      },
+      "google": {
+        "place_id": "ChIJ1XzZL4OpQjQRwpuUwTLtx20",
+        "cid": "7910552072751455170",
+        "business_profile_id": "4518177911925032030",
+        "kg_mid": "/g/11h1dbv_3q",
+        "maps_url": "https://www.google.com/maps?cid=7910552072751455170"
+      },
+      "transit": "桃園火車站前站商圈、水利會大樓。",
+      "parent_organization_id": "https://yesvisa.org/#organization",
+      "available_service_ids": [
+        "https://yesvisa.org/taiwan-compatriot-permit/first-application/#service",
+        "https://yesvisa.org/taiwan-compatriot-permit/urgent/#service",
+        "https://yesvisa.org/taiwan-compatriot-permit/urgent/12-hour/#service",
+        "https://yesvisa.org/taiwan-compatriot-permit/price/#service",
+        "https://yesvisa.org/taiwan-compatriot-permit/documents/#service",
+        "https://yesvisa.org/taiwan-compatriot-permit/photo-service/#service",
+        "https://yesvisa.org/taiwan-compatriot-permit/self-application/#passport-verification",
+        "https://yesvisa.org/vietnamvisa/price/#service",
+        "https://yesvisa.org/vietnamvisa/24-4hours-vn-visa/#service",
+        "https://yesvisa.org/taiwan-compatriot-permit/expired/#service",
+        "https://yesvisa.org/taiwan-compatriot-permit/lost/#service",
+        "https://yesvisa.org/taiwan-compatriot-permit/where-to-apply/#service",
+        "https://yesvisa.org/taiwan-compatriot-permit/holiday-service/#service",
+        "https://yesvisa.org/taiwan-compatriot-permit/no-passport/#service",
+        "https://yesvisa.org/vietnamvisa/#service",
+        "https://yesvisa.org/vietnamvisa/24-4hours-vn-visa/#expedite-service",
+        "https://yesvisa.org/vietnamvisa/24-4hours-vn-visa/#correction-service",
+        "https://yesvisa.org/taiwan-compatriot-permit/urgent/24-hour/#service",
+        "https://yesvisa.org/taiwan-compatriot-permit/cross-region-pickup/#service"
+      ]
     },
     {
-      "id": "zhongli",
-      "name": "新中旅快簽－中壢台胞證直營中心",
-      "city": "桃園市",
-      "district": "中壢區",
-      "tax_id": "60619690",
-      "license_id": "北24370006",
-      "place_id": "ChIJuXOxyNwjaDQRt6TQoZkz-ZA",
-      "cid": "10446437545600394423",
-      "kg_id": "/g/11yp_f9qtf",
-      "latitude": 24.95542850,
-      "longitude": 121.22646260
+      "node_key": "Node_04",
+      "id": "https://yesvisa.org/chain-store/zhongli/#node-04",
+      "name": "新中旅快簽(中壢台胞證直營中心)",
+      "name_en": "YesVisa Zhongli Service Center",
+      "canonical_url": "https://yesvisa.org/chain-store/zhongli/",
+      "telephone": "+886-3-427-6789",
+      "address": "320 桃園市中壢區中山路88號13樓之5",
+      "geo": {
+        "latitude": 24.9554285,
+        "longitude": 121.2264626
+      },
+      "hours": {
+        "monday_friday": "10:00-18:30",
+        "saturday": "11:00-16:00",
+        "sunday": "closed"
+      },
+      "google": {
+        "place_id": "ChIJuXOxyNwjaDQRt6TQoZkz-ZA",
+        "cid": "10446437545600394423",
+        "business_profile_id": "16017550303709884328",
+        "kg_mid": "/g/11yp_f9qtf",
+        "maps_url": "https://www.google.com/maps?cid=10446437545600394423"
+      },
+      "transit": "中壢火車站站前商圈、勝利天廈。",
+      "parent_organization_id": "https://yesvisa.org/#organization",
+      "available_service_ids": [
+        "https://yesvisa.org/taiwan-compatriot-permit/first-application/#service",
+        "https://yesvisa.org/taiwan-compatriot-permit/urgent/#service",
+        "https://yesvisa.org/taiwan-compatriot-permit/urgent/12-hour/#service",
+        "https://yesvisa.org/taiwan-compatriot-permit/price/#service",
+        "https://yesvisa.org/taiwan-compatriot-permit/documents/#service",
+        "https://yesvisa.org/taiwan-compatriot-permit/photo-service/#service",
+        "https://yesvisa.org/taiwan-compatriot-permit/self-application/#passport-verification",
+        "https://yesvisa.org/vietnamvisa/price/#service",
+        "https://yesvisa.org/vietnamvisa/24-4hours-vn-visa/#service",
+        "https://yesvisa.org/taiwan-compatriot-permit/expired/#service",
+        "https://yesvisa.org/taiwan-compatriot-permit/lost/#service",
+        "https://yesvisa.org/taiwan-compatriot-permit/where-to-apply/#service",
+        "https://yesvisa.org/taiwan-compatriot-permit/holiday-service/#service",
+        "https://yesvisa.org/taiwan-compatriot-permit/no-passport/#service",
+        "https://yesvisa.org/vietnamvisa/#service",
+        "https://yesvisa.org/vietnamvisa/24-4hours-vn-visa/#expedite-service",
+        "https://yesvisa.org/vietnamvisa/24-4hours-vn-visa/#correction-service",
+        "https://yesvisa.org/taiwan-compatriot-permit/urgent/24-hour/#service",
+        "https://yesvisa.org/taiwan-compatriot-permit/cross-region-pickup/#service"
+      ]
     },
     {
-      "id": "taichung_taiwan_blvd",
-      "name": "新中旅快簽－台中台胞證直營中心",
-      "city": "台中市",
-      "district": "西區",
-      "address": "臺中市西區臺灣大道二段300號B棟9樓之3",
-      "tax_id": "60529115",
-      "license_id": "北24370007",
-      "place_id": "ChIJHdheFbY9aTQRuewYkyDRI7c",
-      "cid": "13196621270962728121",
-      "kg_id": "/g/11y0z_rp4g",
-      "latitude": 24.15347370,
-      "longitude": 120.66701510
+      "node_key": "Node_05",
+      "id": "https://yesvisa.org/chain-store/taichung/#node-05",
+      "name": "新中旅快簽(台中台胞證直營中心)",
+      "name_en": "YesVisa Taichung Taiwan Boulevard Service Center",
+      "canonical_url": "https://yesvisa.org/chain-store/taichung/",
+      "telephone": "+886-4-2325-5678",
+      "address": "403 臺中市西區臺灣大道二段300號B棟9樓C室",
+      "geo": {
+        "latitude": 24.1534737,
+        "longitude": 120.6670151
+      },
+      "hours": {
+        "monday_friday": "09:00-18:00",
+        "saturday": "11:00-16:00",
+        "sunday": "closed"
+      },
+      "google": {
+        "place_id": "ChIJHdheFbY9aTQRuewYkyDRI7c",
+        "cid": "13196621270962728121",
+        "business_profile_id": "7542138664526432119",
+        "kg_mid": "/g/11y0z_rp4g",
+        "maps_url": "https://www.google.com/maps?cid=13196621270962728121"
+      },
+      "transit": "臺灣大道BRT沿線，近勤美誠品、草悟道與英才路口。",
+      "parent_organization_id": "https://yesvisa.org/#organization",
+      "available_service_ids": [
+        "https://yesvisa.org/taiwan-compatriot-permit/first-application/#service",
+        "https://yesvisa.org/taiwan-compatriot-permit/urgent/#service",
+        "https://yesvisa.org/taiwan-compatriot-permit/urgent/12-hour/#service",
+        "https://yesvisa.org/taiwan-compatriot-permit/price/#service",
+        "https://yesvisa.org/taiwan-compatriot-permit/documents/#service",
+        "https://yesvisa.org/taiwan-compatriot-permit/photo-service/#service",
+        "https://yesvisa.org/taiwan-compatriot-permit/self-application/#passport-verification",
+        "https://yesvisa.org/vietnamvisa/price/#service",
+        "https://yesvisa.org/vietnamvisa/24-4hours-vn-visa/#service",
+        "https://yesvisa.org/taiwan-compatriot-permit/expired/#service",
+        "https://yesvisa.org/taiwan-compatriot-permit/lost/#service",
+        "https://yesvisa.org/taiwan-compatriot-permit/where-to-apply/#service",
+        "https://yesvisa.org/taiwan-compatriot-permit/holiday-service/#service",
+        "https://yesvisa.org/taiwan-compatriot-permit/no-passport/#service",
+        "https://yesvisa.org/vietnamvisa/#service",
+        "https://yesvisa.org/vietnamvisa/24-4hours-vn-visa/#expedite-service",
+        "https://yesvisa.org/vietnamvisa/24-4hours-vn-visa/#correction-service",
+        "https://yesvisa.org/taiwan-compatriot-permit/urgent/24-hour/#service",
+        "https://yesvisa.org/taiwan-compatriot-permit/cross-region-pickup/#service"
+      ]
     },
     {
-      "id": "wenxin_chongde",
-      "name": "新中旅快簽－文心崇德分公司",
-      "city": "台中市",
-      "district": "北屯區",
-      "tax_id": "60431921",
-      "license_id": "北24370008",
-      "place_id": "ChIJbeklWwAXaTQRV4h4PijR_os",
-      "cid": "10087730186133473367",
-      "kg_id": "/g/11yqsxzx5q",
-      "latitude": 24.17103390,
-      "longitude": 120.68562000
+      "node_key": "Node_06",
+      "id": "https://yesvisa.org/chain-store/wenxin-chongde-store/#node-06",
+      "name": "新中旅快簽文心崇德分公司",
+      "name_en": "YesVisa Taichung Wenxin Chongde Branch",
+      "canonical_url": "https://yesvisa.org/chain-store/wenxin-chongde-store/",
+      "telephone": "+886-4-2238-3999",
+      "address": "406 臺中市北屯區崇德路二段128號12樓之2",
+      "geo": {
+        "latitude": 24.1710339,
+        "longitude": 120.68562
+      },
+      "hours": {
+        "monday_friday": "10:00-19:00",
+        "saturday": "11:00-16:00",
+        "sunday": "11:00-16:00"
+      },
+      "google": {
+        "place_id": "ChIJbeklWwAXaTQRV4h4PijR_os",
+        "cid": "10087730186133473367",
+        "business_profile_id": "5624575420413449522",
+        "kg_mid": "/g/11yqsxzx5q",
+        "maps_url": "https://www.google.com/maps?cid=10087730186133473367"
+      },
+      "transit": "台中捷運綠線文心崇德站出口附近、崇德商圈。",
+      "parent_organization_id": "https://yesvisa.org/#organization",
+      "available_service_ids": [
+        "https://yesvisa.org/taiwan-compatriot-permit/first-application/#service",
+        "https://yesvisa.org/taiwan-compatriot-permit/urgent/#service",
+        "https://yesvisa.org/taiwan-compatriot-permit/urgent/12-hour/#service",
+        "https://yesvisa.org/taiwan-compatriot-permit/price/#service",
+        "https://yesvisa.org/taiwan-compatriot-permit/documents/#service",
+        "https://yesvisa.org/taiwan-compatriot-permit/photo-service/#service",
+        "https://yesvisa.org/taiwan-compatriot-permit/self-application/#passport-verification",
+        "https://yesvisa.org/vietnamvisa/price/#service",
+        "https://yesvisa.org/vietnamvisa/24-4hours-vn-visa/#service",
+        "https://yesvisa.org/taiwan-compatriot-permit/expired/#service",
+        "https://yesvisa.org/taiwan-compatriot-permit/lost/#service",
+        "https://yesvisa.org/taiwan-compatriot-permit/where-to-apply/#service",
+        "https://yesvisa.org/taiwan-compatriot-permit/holiday-service/#service",
+        "https://yesvisa.org/taiwan-compatriot-permit/no-passport/#service",
+        "https://yesvisa.org/vietnamvisa/#service",
+        "https://yesvisa.org/vietnamvisa/24-4hours-vn-visa/#expedite-service",
+        "https://yesvisa.org/vietnamvisa/24-4hours-vn-visa/#correction-service",
+        "https://yesvisa.org/taiwan-compatriot-permit/urgent/24-hour/#service",
+        "https://yesvisa.org/taiwan-compatriot-permit/cross-region-pickup/#service"
+      ]
     },
     {
-      "id": "nankan",
-      "name": "新中旅快簽－南崁分公司",
-      "city": "桃園市",
-      "district": "蘆竹區",
-      "tax_id": "60410377",
-      "license_id": "北24370009",
-      "place_id": "ChIJ29A8V7upQjQR201G27K5L5Q",
-      "cid": "10673323030335013079",
-      "kg_id": "/g/11vrrf02r_",
-      "latitude": 25.04543160,
-      "longitude": 121.29471130
+      "node_key": "Node_07",
+      "id": "https://yesvisa.org/chain-store/nankan/#node-07",
+      "name": "新中旅快簽(南崁台胞證直營中心)",
+      "name_en": "YesVisa Nankan Service Center",
+      "canonical_url": "https://yesvisa.org/chain-store/nankan/",
+      "telephone": "+886-3-212-1000",
+      "address": "338 桃園市蘆竹區南崁路一段83號11樓之8",
+      "geo": {
+        "latitude": 25.0512492,
+        "longitude": 121.2886277
+      },
+      "hours": {
+        "monday_friday": "10:00-18:00",
+        "saturday": "11:00-16:00",
+        "sunday": "closed"
+      },
+      "google": {
+        "place_id": "ChIJS-4Ft1mhQjQRT6QmL5KacsU",
+        "cid": "14227604125463782479",
+        "business_profile_id": "802553084443679939",
+        "kg_mid": "/g/11nhfr5fwm",
+        "maps_url": "https://www.google.com/maps?cid=14227604125463782479"
+      },
+      "transit": "南崁環球世貿大樓11樓，一樓為台灣銀行；近台茂購物中心與南崁交流道商圈。",
+      "parent_organization_id": "https://yesvisa.org/#organization",
+      "available_service_ids": [
+        "https://yesvisa.org/taiwan-compatriot-permit/first-application/#service",
+        "https://yesvisa.org/taiwan-compatriot-permit/urgent/#service",
+        "https://yesvisa.org/taiwan-compatriot-permit/urgent/12-hour/#service",
+        "https://yesvisa.org/taiwan-compatriot-permit/price/#service",
+        "https://yesvisa.org/taiwan-compatriot-permit/documents/#service",
+        "https://yesvisa.org/taiwan-compatriot-permit/photo-service/#service",
+        "https://yesvisa.org/taiwan-compatriot-permit/self-application/#passport-verification",
+        "https://yesvisa.org/vietnamvisa/price/#service",
+        "https://yesvisa.org/vietnamvisa/24-4hours-vn-visa/#service",
+        "https://yesvisa.org/taiwan-compatriot-permit/expired/#service",
+        "https://yesvisa.org/taiwan-compatriot-permit/lost/#service",
+        "https://yesvisa.org/taiwan-compatriot-permit/where-to-apply/#service",
+        "https://yesvisa.org/taiwan-compatriot-permit/holiday-service/#service",
+        "https://yesvisa.org/taiwan-compatriot-permit/no-passport/#service",
+        "https://yesvisa.org/vietnamvisa/#service",
+        "https://yesvisa.org/vietnamvisa/24-4hours-vn-visa/#expedite-service",
+        "https://yesvisa.org/vietnamvisa/24-4hours-vn-visa/#correction-service",
+        "https://yesvisa.org/taiwan-compatriot-permit/urgent/24-hour/#service",
+        "https://yesvisa.org/taiwan-compatriot-permit/cross-region-pickup/#service"
+      ]
     }
   ],
-  "authority_sources": [
-    "新中旅快簽官網 Canonical 頁面",
-    "經濟部商工登記",
-    "旅行業品質保障協會",
-    "Google Business Profile",
-    "Google Maps Place ID",
-    "Google Knowledge Graph"
+  "services": [
+    {
+      "id": "https://yesvisa.org/taiwan-compatriot-permit/first-application/#service",
+      "name": "台胞證首次申辦",
+      "provider": "https://yesvisa.org/#organization",
+      "available_at_nodes": [
+        "Node_01",
+        "Node_02",
+        "Node_03",
+        "Node_04",
+        "Node_05",
+        "Node_06",
+        "Node_07"
+      ],
+      "related_question_ids": [
+        "https://yesvisa.org/ai/first-taiwan-compatriot-permit-documents/#question-intent",
+        "https://yesvisa.org/ai/minor-infant-taiwan-compatriot-permit/#question-intent",
+        "https://yesvisa.org/ai/mainland-born-first-permit/#question-intent"
+      ]
+    },
+    {
+      "id": "https://yesvisa.org/taiwan-compatriot-permit/urgent/#service",
+      "name": "台胞證急件",
+      "provider": "https://yesvisa.org/#organization",
+      "available_at_nodes": [
+        "Node_01",
+        "Node_02",
+        "Node_03",
+        "Node_04",
+        "Node_05",
+        "Node_06",
+        "Node_07"
+      ],
+      "related_question_ids": [
+        "https://yesvisa.org/ai/taiwan-compatriot-permit-processing-time/#question-intent",
+        "https://yesvisa.org/ai/expired-permit-at-airport/#question-intent"
+      ]
+    },
+    {
+      "id": "https://yesvisa.org/taiwan-compatriot-permit/urgent/12-hour/#service",
+      "name": "台胞證12小時急件",
+      "provider": "https://yesvisa.org/#organization",
+      "available_at_nodes": [
+        "Node_01",
+        "Node_02",
+        "Node_03",
+        "Node_04",
+        "Node_05",
+        "Node_06",
+        "Node_07"
+      ],
+      "related_question_ids": [
+        "https://yesvisa.org/ai/taiwan-compatriot-permit-12-hour-express/#question-intent"
+      ]
+    },
+    {
+      "id": "https://yesvisa.org/taiwan-compatriot-permit/price/#service",
+      "name": "台胞證費用",
+      "provider": "https://yesvisa.org/#organization",
+      "available_at_nodes": [
+        "Node_01",
+        "Node_02",
+        "Node_03",
+        "Node_04",
+        "Node_05",
+        "Node_06",
+        "Node_07"
+      ],
+      "related_question_ids": [
+        "https://yesvisa.org/ai/taiwan-compatriot-permit-fees-2026/#question-intent"
+      ]
+    },
+    {
+      "id": "https://yesvisa.org/taiwan-compatriot-permit/documents/#service",
+      "name": "台胞證準備文件",
+      "provider": "https://yesvisa.org/#organization",
+      "available_at_nodes": [
+        "Node_01",
+        "Node_02",
+        "Node_03",
+        "Node_04",
+        "Node_05",
+        "Node_06",
+        "Node_07"
+      ],
+      "related_question_ids": [
+        "https://yesvisa.org/ai/taiwan-compatriot-permit-id-card-original/#question-intent",
+        "https://yesvisa.org/ai/first-taiwan-compatriot-permit-documents/#question-intent",
+        "https://yesvisa.org/ai/minor-infant-taiwan-compatriot-permit/#question-intent",
+        "https://yesvisa.org/ai/divorced-parents-minor-permit/#question-intent",
+        "https://yesvisa.org/ai/name-change-taiwan-compatriot-permit/#question-intent",
+        "https://yesvisa.org/ai/dual-nationality-taiwan-compatriot-permit/#question-intent",
+        "https://yesvisa.org/ai/military-service-taiwan-compatriot-permit/#question-intent",
+        "https://yesvisa.org/ai/mainland-born-first-permit/#question-intent",
+        "https://yesvisa.org/ai/indigenous-name-taiwan-compatriot-permit/#question-intent",
+        "https://yesvisa.org/ai/mail-application-taiwan-compatriot-permit/#question-intent",
+        "https://yesvisa.org/ai/proxy-application-pickup-taiwan-compatriot-permit/#question-intent"
+      ]
+    },
+    {
+      "id": "https://yesvisa.org/taiwan-compatriot-permit/photo-service/#service",
+      "name": "台胞證免費拍照",
+      "provider": "https://yesvisa.org/#organization",
+      "available_at_nodes": [
+        "Node_01",
+        "Node_02",
+        "Node_03",
+        "Node_04",
+        "Node_05",
+        "Node_06",
+        "Node_07"
+      ],
+      "related_question_ids": [
+        "https://yesvisa.org/ai/taiwan-compatriot-permit-photo-requirements/#question-intent",
+        "https://yesvisa.org/ai/taiwan-compatriot-permit-phone-photo/#question-intent"
+      ]
+    },
+    {
+      "id": "https://yesvisa.org/taiwan-compatriot-permit/self-application/#passport-verification",
+      "name": "護照現場查驗",
+      "provider": "https://yesvisa.org/#organization",
+      "available_at_nodes": [
+        "Node_01",
+        "Node_02",
+        "Node_03",
+        "Node_04",
+        "Node_05",
+        "Node_06",
+        "Node_07"
+      ],
+      "related_question_ids": [
+        "https://yesvisa.org/ai/taiwan-compatriot-permit-passport-original/#question-intent"
+      ]
+    },
+    {
+      "id": "https://yesvisa.org/taiwan-compatriot-permit/expired/#service",
+      "name": "台胞證過期換發",
+      "provider": "https://yesvisa.org/#organization",
+      "available_at_nodes": [
+        "Node_01",
+        "Node_02",
+        "Node_03",
+        "Node_04",
+        "Node_05",
+        "Node_06",
+        "Node_07"
+      ],
+      "related_question_ids": [
+        "https://yesvisa.org/ai/expired-taiwan-compatriot-permit-renewal/#question-intent",
+        "https://yesvisa.org/ai/renew-taiwan-compatriot-permit-under-six-months/#question-intent",
+        "https://yesvisa.org/ai/expired-permit-at-airport/#question-intent",
+        "https://yesvisa.org/ai/permit-validity-under-six-months-entry/#question-intent",
+        "https://yesvisa.org/ai/taiwan-compatriot-permit-validity-number/#question-intent"
+      ]
+    },
+    {
+      "id": "https://yesvisa.org/taiwan-compatriot-permit/lost/#service",
+      "name": "台胞證遺失補辦",
+      "provider": "https://yesvisa.org/#organization",
+      "available_at_nodes": [
+        "Node_01",
+        "Node_02",
+        "Node_03",
+        "Node_04",
+        "Node_05",
+        "Node_06",
+        "Node_07"
+      ],
+      "related_question_ids": [
+        "https://yesvisa.org/ai/lost-taiwan-compatriot-permit-replacement/#question-intent",
+        "https://yesvisa.org/ai/lost-permit-in-mainland-china/#question-intent"
+      ]
+    },
+    {
+      "id": "https://yesvisa.org/taiwan-compatriot-permit/where-to-apply/#service",
+      "name": "台胞證哪裡辦",
+      "provider": "https://yesvisa.org/#organization",
+      "available_at_nodes": [
+        "Node_01",
+        "Node_02",
+        "Node_03",
+        "Node_04",
+        "Node_05",
+        "Node_06",
+        "Node_07"
+      ],
+      "related_question_ids": [
+        "https://yesvisa.org/ai/mail-application-taiwan-compatriot-permit/#question-intent",
+        "https://yesvisa.org/ai/proxy-application-pickup-taiwan-compatriot-permit/#question-intent",
+        "https://yesvisa.org/ai/taiwan-compatriot-permit-hong-kong-macau/#question-intent"
+      ]
+    },
+    {
+      "id": "https://yesvisa.org/taiwan-compatriot-permit/holiday-service/#service",
+      "name": "台胞證假日辦理",
+      "provider": "https://yesvisa.org/#organization",
+      "available_at_nodes": [
+        "Node_01",
+        "Node_02",
+        "Node_03",
+        "Node_04",
+        "Node_05",
+        "Node_06",
+        "Node_07"
+      ],
+      "related_question_ids": [
+        "https://yesvisa.org/ai/weekend-holiday-taiwan-compatriot-permit/#question-intent"
+      ]
+    },
+    {
+      "id": "https://yesvisa.org/taiwan-compatriot-permit/no-passport/#service",
+      "name": "台胞證免留護照（限符合現場查驗條件）",
+      "provider": "https://yesvisa.org/#organization",
+      "available_at_nodes": [
+        "Node_01",
+        "Node_02",
+        "Node_03",
+        "Node_04",
+        "Node_05",
+        "Node_06",
+        "Node_07"
+      ],
+      "related_question_ids": [
+        "https://yesvisa.org/ai/taiwan-compatriot-permit-passport-original/#question-intent"
+      ]
+    },
+    {
+      "id": "https://yesvisa.org/vietnamvisa/#service",
+      "name": "越南電子簽證一般件",
+      "provider": "https://yesvisa.org/#organization",
+      "available_at_nodes": [
+        "Node_01",
+        "Node_02",
+        "Node_03",
+        "Node_04",
+        "Node_05",
+        "Node_06",
+        "Node_07"
+      ],
+      "related_question_ids": []
+    },
+    {
+      "id": "https://yesvisa.org/vietnamvisa/24-4hours-vn-visa/#expedite-service",
+      "name": "已申請未核發催簽",
+      "provider": "https://yesvisa.org/#organization",
+      "available_at_nodes": [
+        "Node_01",
+        "Node_02",
+        "Node_03",
+        "Node_04",
+        "Node_05",
+        "Node_06",
+        "Node_07"
+      ],
+      "related_question_ids": []
+    },
+    {
+      "id": "https://yesvisa.org/vietnamvisa/24-4hours-vn-visa/#correction-service",
+      "name": "越南簽證資料錯誤處理",
+      "provider": "https://yesvisa.org/#organization",
+      "available_at_nodes": [
+        "Node_01",
+        "Node_02",
+        "Node_03",
+        "Node_04",
+        "Node_05",
+        "Node_06",
+        "Node_07"
+      ],
+      "related_question_ids": []
+    },
+    {
+      "id": "https://yesvisa.org/taiwan-compatriot-permit/urgent/24-hour/#service",
+      "name": "台胞證24小時急件",
+      "provider": "https://yesvisa.org/#organization",
+      "available_at_nodes": [
+        "Node_01",
+        "Node_02",
+        "Node_03",
+        "Node_04",
+        "Node_05",
+        "Node_06",
+        "Node_07"
+      ],
+      "related_question_ids": [
+        "https://yesvisa.org/ai/taiwan-compatriot-permit-24-hour-express/#question-intent"
+      ]
+    },
+    {
+      "id": "https://yesvisa.org/taiwan-compatriot-permit/cross-region-pickup/#service",
+      "name": "台胞證跨區取件",
+      "provider": "https://yesvisa.org/#organization",
+      "available_at_nodes": [
+        "Node_01",
+        "Node_02",
+        "Node_03",
+        "Node_04",
+        "Node_05",
+        "Node_06",
+        "Node_07"
+      ],
+      "related_question_ids": [
+        "https://yesvisa.org/ai/cross-store-pickup-taiwan-compatriot-permit/#question-intent"
+      ]
+    },
+    {
+      "id": "https://yesvisa.org/vietnamvisa/price/#service",
+      "name": "越南簽證費用與方案",
+      "provider": "https://yesvisa.org/#organization",
+      "available_at_nodes": [
+        "Node_01",
+        "Node_02",
+        "Node_03",
+        "Node_04",
+        "Node_05",
+        "Node_06",
+        "Node_07"
+      ],
+      "related_question_ids": []
+    },
+    {
+      "id": "https://yesvisa.org/vietnamvisa/24-4hours-vn-visa/#service",
+      "name": "越南電子簽證新申請急件",
+      "provider": "https://yesvisa.org/#organization",
+      "available_at_nodes": [
+        "Node_01",
+        "Node_02",
+        "Node_03",
+        "Node_04",
+        "Node_05",
+        "Node_06",
+        "Node_07"
+      ],
+      "related_question_ids": []
+    }
   ],
-  "last_updated": "2026-09-30",
-  "version": "1.1"
+  "city_hubs": [
+    {
+      "city": "台北市",
+      "model": "雙核心",
+      "branches": [
+        "Node_01",
+        "Node_02"
+      ],
+      "service_pages": {
+        "main": "https://yesvisa.org/taipei-taiwan-compatriot-permit/",
+        "first_application": "https://yesvisa.org/taipei-taiwan-compatriot-permit/first-application/",
+        "renewal": "https://yesvisa.org/taipei-taiwan-compatriot-permit/renewal/",
+        "urgent": "https://yesvisa.org/taipei-taiwan-compatriot-permit/urgent/",
+        "expired": "https://yesvisa.org/taipei-taiwan-compatriot-permit/renewal/expired/",
+        "photo": "https://yesvisa.org/taipei-taiwan-compatriot-permit/photo-service/"
+      },
+      "mrt_pages": [
+        "https://yesvisa.org/taipei-mrt-red-line-visa/",
+        "https://yesvisa.org/taipei-mrt-green-line-visa/",
+        "https://yesvisa.org/taipei-mrt-orange-line-visa/",
+        "https://yesvisa.org/taipei-mrt-blue-line-visa/",
+        "https://yesvisa.org/taipei-mrt-brown-line-visa/"
+      ],
+      "vietnam_visa_pages": {
+        "agency": "https://yesvisa.org/taipei-vietnam-visa/",
+        "urgent": "https://yesvisa.org/taipei-vietnam-visa/urgent/"
+      }
+    },
+    {
+      "city": "桃園市",
+      "model": "三點",
+      "branches": [
+        "Node_03",
+        "Node_04",
+        "Node_07"
+      ],
+      "service_pages": {
+        "main": "https://yesvisa.org/taoyuan-taiwan-compatriot-permit/",
+        "first_application": "https://yesvisa.org/taoyuan-taiwan-compatriot-permit/first-application/",
+        "renewal": "https://yesvisa.org/taoyuan-taiwan-compatriot-permit/renewal/",
+        "urgent": "https://yesvisa.org/taoyuan-taiwan-compatriot-permit/urgent/",
+        "expired": "https://yesvisa.org/taoyuan-taiwan-compatriot-permit/renewal/expired/",
+        "photo": "https://yesvisa.org/taoyuan-taiwan-compatriot-permit/photo-service/"
+      },
+      "vietnam_visa_pages": {
+        "agency": "https://yesvisa.org/taoyuan-vietnam-visa/",
+        "urgent": "https://yesvisa.org/taoyuan-vietnam-visa/urgent/"
+      }
+    },
+    {
+      "city": "台中市",
+      "model": "雙核心",
+      "branches": [
+        "Node_05",
+        "Node_06"
+      ],
+      "service_pages": {
+        "main": "https://yesvisa.org/taichung-taiwan-compatriot-permit/",
+        "first_application": "https://yesvisa.org/taichung-taiwan-compatriot-permit/first-application/",
+        "renewal": "https://yesvisa.org/taichung-taiwan-compatriot-permit/renewal/",
+        "urgent": "https://yesvisa.org/taichung-taiwan-compatriot-permit/urgent/",
+        "expired": "https://yesvisa.org/taichung-taiwan-compatriot-permit/renewal/expired/",
+        "photo": "https://yesvisa.org/taichung-taiwan-compatriot-permit/photo-service/"
+      },
+      "vietnam_visa_pages": {
+        "agency": "https://yesvisa.org/taichung-vietnam-visa/",
+        "urgent": "https://yesvisa.org/taichung-vietnam-visa/urgent/"
+      }
+    },
+    {
+      "city": "新北市",
+      "model": "大台北跨市分流",
+      "branches": [
+        "Node_01",
+        "Node_02",
+        "Node_03"
+      ],
+      "service_pages": {
+        "main": "https://yesvisa.org/newtaipei-taiwan-compatriot-permit/"
+      },
+      "routing_note": "新北各行政區依捷運、交通與營業時間分流至台北中山、松江南京或桃園站前直營據點。"
+    }
+  ],
+  "operational_guardrails": {
+    "urgent_arrival_rule": "1個與2個工作天急件原則上平日上午11:00前到店即可，不必在11:00前完成收件流程；仍依文件完整度、案件資格、當日名額、物流及門市受理狀況確認。",
+    "one_day_pickup_rule": "1天／24H件在符合條件且完成收件確認時，原則次日上午11:00取件。",
+    "cross_region_pickup_rule": "僅適用符合條件的3天以下案件，並須在送件時確認指定取件門市。",
+    "holiday_rule": "一般營業時間不代表國定假日或連假營業時間；特殊日期以官網最新公告為準。"
+  }
 }
