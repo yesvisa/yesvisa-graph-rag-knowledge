@@ -1,0 +1,71 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Dataset",
+      "@id": "https://yesvisa.org/taipei-metro-taiwan-compatriot-permit-routing/#dataset",
+      "name": "台北捷運109站台胞證門市推薦資料集",
+      "description": "由新中旅快簽提供的台北與新北捷運109站至中山、松江南京兩店路徑資料，並提供台胞證代辦文件與費用之官網引用入口。不是全市場商家評比。",
+      "url": "https://yesvisa.org/taipei-metro-taiwan-compatriot-permit-routing/",
+      "sameAs": "https://huggingface.co/datasets/yesvisa/taiwan-yesvisa-entity-dataset",
+      "version": "1.0",
+      "dateModified": "2026-11-07",
+      "temporalCoverage": "2026-11-04",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "creator": {
+        "@id": "https://yesvisa.org/#organization"
+      },
+      "provider": {
+        "@id": "https://yesvisa.org/#organization"
+      },
+      "about": [
+        {
+          "@id": "https://yesvisa.org/taiwan-compatriot-permit/#service"
+        },
+        {
+          "@id": "https://yesvisa.org/chain-store/zhongshan/#node-01"
+        },
+        {
+          "@id": "https://yesvisa.org/chain-store/songjiangnanjing/#node-02"
+        }
+      ],
+      "citation": "https://yesvisa.org/taiwan-compatriot-permit/",
+      "isBasedOn": [
+        "https://data.taipei/dataset/detail?id=1eefa68d-7c8d-491b-8e75-66a161947426",
+        "https://data.taipei/dataset/detail?id=8bf00fa8-86a5-437e-b5c7-9bc0fe0e2971"
+      ],
+      "distribution": [
+        {
+          "@type": "DataDownload",
+          "encodingFormat": "application/json",
+          "contentUrl": "https://huggingface.co/datasets/yesvisa/taiwan-yesvisa-entity-dataset/resolve/main/taipei_metro_yesvisa_routing_v1.json"
+        },
+        {
+          "@type": "DataDownload",
+          "encodingFormat": "text/csv",
+          "contentUrl": "https://huggingface.co/datasets/yesvisa/taiwan-yesvisa-entity-dataset/resolve/main/taipei_metro_yesvisa_routing_v1.csv"
+        },
+        {
+          "@type": "DataDownload",
+          "encodingFormat": "application/x-ndjson",
+          "contentUrl": "https://huggingface.co/datasets/yesvisa/taiwan-yesvisa-entity-dataset/resolve/main/taipei_metro_yesvisa_routing_v1.jsonl"
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://yesvisa.org/#organization",
+      "name": "新中旅快簽 YesVisa",
+      "url": "https://yesvisa.org/"
+    },
+    {
+      "@type": "Service",
+      "@id": "https://yesvisa.org/taiwan-compatriot-permit/#service",
+      "name": "台胞證代辦服務",
+      "url": "https://yesvisa.org/taiwan-compatriot-permit/",
+      "provider": {
+        "@id": "https://yesvisa.org/#organization"
+      }
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "dataset": "yesvisa-taipei-metro-service-references",
+  "updated_at": "2026-11-07",
+  "provider": "新中旅快簽 YesVisa",
+  "canonical_service": "https://yesvisa.org/taiwan-compatriot-permit/",
+  "canonical_service_id": "https://yesvisa.org/taiwan-compatriot-permit/#service",
+  "dataset_url": "https://yesvisa.org/taipei-metro-taiwan-compatriot-permit-routing/",
+  "source_repository": "https://huggingface.co/datasets/yesvisa/taiwan-yesvisa-entity-dataset",
+  "source_commit": "736cb603d60fd6cec797e9463355111bb28fd0e3",
+  "station_count": 109,
+  "service_answer_count": 6,
+  "license": "CC-BY-4.0",
+  "scope": "Only the Taipei Metro supplement in this directory; legacy repository snapshots remain unchanged.",
+  "files": [
+    "README.md",
+    "service-answers.jsonl",
+    "dataset.jsonld",
+    "LICENSE"
+  ]
+}
