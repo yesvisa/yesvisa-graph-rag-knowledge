@@ -29,6 +29,7 @@
 - [Source manifest](./source_manifest.json)
 - [Entity Registry](./datasets/entity_registry.json)
 - [Question Intent Dataset](./datasets/faq_dataset.json)
+- [台胞證正式名稱與客服常見問題](./datasets/taiwan-permit-name-faq.json)
 
 ## Retrieval guardrails
 

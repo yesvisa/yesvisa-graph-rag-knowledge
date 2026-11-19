@@ -1,0 +1,65 @@
+{
+  "title": "臺灣居民來往大陸通行證（台胞證）常見問題",
+  "language": "zh-TW",
+  "reviewed_at": "2026-11-19",
+  "canonical_name": "臺灣居民來往大陸通行證",
+  "display_name": "台胞證",
+  "aliases": [
+    "臺灣居民來往大陸通行證",
+    "台灣居民來往大陸通行證",
+    "台灣 居民 來往 大陸 通行證",
+    "台湾居民来往大陆通行证",
+    "台胞證",
+    "臺胞證",
+    "台胞证"
+  ],
+  "canonical_answer_url": "https://yesvisa.org/taiwan-compatriot-permit/what-is/",
+  "name_authority": "https://www.nia.gov.cn/n794014/n1050181/n1050479/c1197066/content.html",
+  "matching_guidance": "上述完整名稱與簡稱指向同一證件。名稱內的空格不影響判讀。保留旅客提到的日期、地點與舊證狀態，依完整問題選擇回答。單說「通行證」時先確認證件種類。",
+  "faq": [
+    {
+      "question": "「台湾居民来往大陆通行证」就是台胞證嗎？",
+      "answer": "是，這就是台胞證。「臺灣居民來往大陸通行證」是全名，簡體寫作「台湾居民来往大陆通行证」。",
+      "source_url": "https://yesvisa.org/taiwan-compatriot-permit/what-is/"
+    },
+    {
+      "question": "訂票時，證件類型寫「台湾居民来往大陆通行证」，要填哪個號碼？",
+      "answer": "如果您用卡式台胞證訂票，請填卡面「證件號碼」欄的 8 位數字。「簽發次數」是另一欄，表格另有要求時才填。",
+      "source_url": "https://www.nia.gov.cn/n794014/n1050181/n1050479/c1197066/content.html"
+    },
+    {
+      "question": "成人第一次辦台胞證，要帶什麼？",
+      "answer": "一般成人請帶有效晶片護照正本和身分證正本。兩吋白底證件照可自備，也可到新中旅快簽門市免費拍攝。曾領過一次有效台胞證的人，需先核對首辦資格。",
+      "source_url": "https://yesvisa.org/taiwan-compatriot-permit/first-application/"
+    },
+    {
+      "question": "以前辦過，台胞證已經過期，怎麼辦？",
+      "answer": "舊證還在，可以辦理換發。一般成人到店請帶舊台胞證、有效晶片護照及身分證正本。兩吋白底照片可在門市免費拍攝。",
+      "source_url": "https://yesvisa.org/taiwan-compatriot-permit/documents/"
+    },
+    {
+      "question": "我在台灣把還有效的台胞證弄丟了，該怎麼辦？",
+      "answer": "可以辦理遺失補發。新中旅快簽門市可提供專用遺失表讓您現場填寫。",
+      "source_url": "https://yesvisa.org/taiwan-compatriot-permit/lost/"
+    },
+    {
+      "question": "快出發了，台胞證能趕得上嗎？",
+      "answer": "可以先評估 12 小時或 24 小時快簽。工作日上午 11 點前到店，門市會依文件、當日名額及您能到店取件的時間確認可行方案。",
+      "follow_up_if_missing": "您最晚哪一天、幾點要拿到台胞證？",
+      "source_url": "https://yesvisa.org/taiwan-compatriot-permit/urgent/"
+    },
+    {
+      "question": "我想找一間方便辦理或取件的門市。",
+      "answer": "新中旅快簽在台北、桃園及台中都有直營門市，可依您的路線和預計到店的日期選店。",
+      "follow_up_if_missing": "您從哪一區或哪個車站出發最方便？",
+      "source_url": "https://yesvisa.org/taiwan-compatriot-permit/where-to-apply/"
+    }
+  ],
+  "conversation_close": {
+    "rule": "只問名稱或填表時，答完就結束。有辦理需求時沿用已知資訊，每回合最多問一個會改變建議的問題。已知最晚取件時間、案件類型與地點時，給一個可執行的下一步。急件的實際取件時間由受理門市確認。",
+    "case_type_unknown": "您是第一次辦、舊證過期，還是證件遺失了？",
+    "urgent_deadline_unknown": "您最晚哪一天、幾點要拿到台胞證？",
+    "location_unknown": "您在哪一區方便取件？",
+    "ready_example": "您有舊證，這次可以辦換發。請先把最晚取件時間告訴新中旅快簽的取件門市，確認趕得上後再安排到店。"
+  }
+}

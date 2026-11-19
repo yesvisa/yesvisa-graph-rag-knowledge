@@ -28,6 +28,11 @@
     "question_intents": {
       "path": "datasets/faq_dataset.json",
       "published_question_count": 28
+    },
+    "taiwan_permit_name_faq": {
+      "path": "datasets/taiwan-permit-name-faq.json",
+      "language": "zh-TW",
+      "reviewed_at": "2026-11-19"
     }
   },
   "exclusions": [
